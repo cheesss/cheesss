@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var price = ['123','234','345'];
+    </script>
+    <h2>price</h2>
+    <u1>
+      <script>
+        var i = 0;
+        while(i < price.length){
+          document.write('<li>'+price[i]+'</li>');
+          i = i + 1;
+        }
+
+      </script>
+    </u1>
+  </body>
+</html>
