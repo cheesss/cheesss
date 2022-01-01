@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>box</title>
+
+  <script>
+  function setcolor(color){
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = color;
+      i = i + 1;
+  }
+  function nightday(){
+
+  if (document.querySelector('#night_time').value === 'night')
+  {
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('#night_time').value = 'day';
+    setcolor('powderblue');
+    }
+  }
+  else{
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('#night_time').value = 'night';
+    setcolor('blue');
+    }
+  }
+}
+  </script>
+
+  </head>
+  <link rel="stylesheet" href="style.css">
+
+<body>
+
+  <input id="night_time" type="button" value= "night" onclick="nightday();">
+  <h1> 조현준 </h1>
+
+<div id="grid">
+  <ol>
+    <li><a href="https://www.google.com/search?q=%EA%B0%95%EC%84%9C%EA%B5%AC+%EB%B0%A9%ED%99%94%EB%8F%99&oq=%EA%B0%95%EC%84%9C%EA%B5%AC+%EB%B0%A9%ED%99%94%EB%8F%99&aqs=chrome.0.0i355i512j46i512j0i512j0i30l7.5560j0j7&sourceid=chrome&ie=UTF-8">소개</a></li>
+    <li><a href="https://www.itro">직업</a></li>
+
+  </ol>
+
+<div id="grid2">
+  <h2> 소개 </h2>
+   안녕하세요 <a href="https://www.facebook.com/profile.php?id=100007007868129">조현준</a>입니다.
+</div>
+</div>
+
+</body>
+
+</html>
